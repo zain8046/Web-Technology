@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Registration</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Registration</h1>
+            <div class="row">
+                <div class="col-sm-4">
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your full name" name="name">
+                        </div>   
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City:</label>
+                            <input type="text" class="form-control" id="city" placeholder="Enter city" name="city">
+                        </div>
+                        <div class="form-group">
+                            <label><strong>Skills</strong></label>
+                            <div class="checkbox">
+                                <label><input type="checkbox" id="check1" name="option1" value="HTML" checked> HTML</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" id="check2" name="option2" value="CSS"> CSS</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" id="check3" name="option3" value="JavaScript"> JavaScript</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-sm-8">
+                    <div class="text-center">
+                        <img src="Numl logo.png"
+                             class="img-circle img-responsive center-block"
+                             width="150"
+                             alt="Institute Logo">
+                        <h3>National University of Modern Languages Islamabad</h3>
+                    </div>
+                    <br>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#overview">Overview</a></li>
+                        <li><a data-toggle="tab" href="#courses">Courses</a></li>
+                        <li><a data-toggle="tab" href="#contact">Contact</a></li>
+                    </ul>
+
+                    <div class="tab-content" style="margin-top: 15px;">
+                        <div id="overview" class="tab-pane fade in active">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div id="courses" class="tab-pane fade">
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Course</th>
+                                        <th>Fee</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Computer Science</td>
+                                        <td>100000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Software Engineering</td>
+                                        <td>120000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Artificial Intelligence</td>
+                                        <td>150000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cyber Security</td>
+                                        <td>180000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="contact" class="tab-pane fade">
+                            <p><strong>Email:</strong> info@numl.edu.pk</p>
+                            <p><strong>Phone:</strong> +92 51 1234567</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
